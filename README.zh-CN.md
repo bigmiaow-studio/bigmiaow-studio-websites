@@ -20,6 +20,7 @@
 | Aperture | 协作式 AI 工作空间官网；手撕纸洞拼贴、古典雕塑、纯白社论排版与天蓝重点色；支持完全离线运行。 | [查看 README](aperture/README.md) | [打开 Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/) | [index.html](aperture/index.html) |
 | 伴伴 Banban | 中文团队协作概念落地页；黄色、白色与藏蓝评价墙，支持分类筛选、故事弹窗和移动菜单。 | [查看 README](banban/README.md) | [打开伴伴](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/banban/) | [index.html](banban/index.html) |
 | 原场 Fieldwork | 技术与服务工作室首页；冷灰纤维纸面、墨黑工程排版与酸橙功能标记，包含扇形线路、场景轮换、原创控制台和点阵网络。 | [查看 README](fieldwork/README.md) | [打开原场](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/fieldwork/) | [index.html](fieldwork/index.html) |
+| 未定 UNTITLED | 中性灵感与作品展示页；浅白点阵纸面、明黄与电光蓝拼贴、超粗标题和黑边硬阴影，支持作品预览切换与类别筛选。 | [查看 README](untitled/README.md) | [打开未定](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/untitled/) | [index.html](untitled/index.html) |
 
 ## 查看页面
 
@@ -41,6 +42,7 @@ bigmiaow-studio-websites/
 ├── README.zh-CN.md         # 中文说明
 ├── aperture/              # 离线协作式 AI 工作空间
 ├── banban/                # 团队协作故事页面及开发源码
+├── untitled/              # 灵感作品页、提示词、源码与截图
 └── fieldwork/             # 系统工作室首页及开发源码
     ├── README.md          # 项目、素材与验证说明
     ├── PROMPT.md          # 原始设计提示词

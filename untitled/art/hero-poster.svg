@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="526" viewBox="0 0 800 526">
+<defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#bdcaef" stroke-width=".7"/></pattern><pattern id="stripes" width="11" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 0v11" stroke="#101828" stroke-width="3"/></pattern><filter id="shadow" x="-30%" y="-30%" width="180%" height="180%"><feDropShadow dx="8" dy="10" stdDeviation="0" flood-color="#101828" flood-opacity=".18"/></filter></defs>
+<path fill="#e5ecff" d="M0 0h800v526H0z"/><path fill="url(#grid)" d="M0 0h800v526H0z"/>
+<path d="m603 56 123 31-41 162-123-31z" fill="#ffe329" stroke="#101828" stroke-width="2" transform="rotate(4 650 150)"/>
+<path d="m104 109 230-40 61 348-230 40z" fill="#2563eb" stroke="#101828" stroke-width="2"/>
+<g transform="rotate(-7 412 266)" filter="url(#shadow)"><path fill="#fffef8" stroke="#101828" stroke-width="2" d="M208 28h370v464H208z"/>
+<text x="231" y="57" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="2" fill="#101828">UNTITLED — EXPLORATIONS IN FORM</text><path d="M232 70h321" stroke="#101828"/>
+<path d="M232 110h321v225H232z" fill="#ffe329"/>
+<path d="M232 223a112 112 0 1 1 224 0v112H232z" fill="#2563eb"/>
+<circle cx="399" cy="166" r="57" fill="#fffef8"/><path d="M456 223h97v112h-97z" fill="url(#stripes)"/><circle cx="343" cy="280" r="55" fill="#ffe329"/>
+<text x="228" y="403" font-family="Arial,Helvetica,sans-serif" font-size="68" font-weight="900" letter-spacing="-5" fill="#101828">FORM &amp;</text><text x="228" y="462" font-family="Arial,Helvetica,sans-serif" font-size="68" font-weight="900" letter-spacing="-5" fill="#2563eb">FEELING.</text>
+<text x="232" y="481" font-family="Arial,sans-serif" font-size="7" letter-spacing="1.4" fill="#101828">A STUDY OF SHAPES, COLOURS &amp; POSSIBILITIES.</text></g>
+<g transform="rotate(8 663 352)"><path d="M592 285h133v135H592z" fill="#fffef8" stroke="#101828" stroke-width="2"/><circle cx="658" cy="342" r="39" fill="#ffe329"/><path d="M635 342h46m-23-23v46" stroke="#2563eb" stroke-width="9"/><path d="M609 400h98" stroke="#101828" stroke-width="2"/></g>
+<path d="m123 362 8 20 22 1-17 14 6 22-19-12-19 12 6-22-17-14 22-1z" fill="#ffe329" stroke="#101828" stroke-width="2"/>
+<rect x="355" y="12" width="94" height="25" rx="2" fill="#f3e9b9" opacity=".75" transform="rotate(-7 390 30)"/>
+</svg>

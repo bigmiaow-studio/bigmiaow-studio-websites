@@ -20,6 +20,7 @@ Each case lives in its own theme-named directory. Its README documents the proje
 | Aperture | A collaborative AI workspace website featuring torn-paper collages, classical sculptures, white editorial typography, and a sky-blue accent; fully usable offline. | [Read the README](aperture/README.md) | [Open Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/) | [index.html](aperture/index.html) |
 | Banban | A playful Chinese collaboration concept page with a yellow, white and navy testimonial wall, category filters and story dialogs. | [Read the README](banban/README.md) | [Open Banban](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/banban/) | [index.html](banban/index.html) |
 | Fieldwork | A Chinese technology and services studio website with cool-gray fiber paper, ink-black engineering typography, lime signals, animated fan-out connections, and original interface demonstrations. | [Read the README](fieldwork/README.md) | [Open Fieldwork](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/fieldwork/) | [index.html](fieldwork/index.html) |
+| Untitled 未定 | A neutral inspiration and portfolio page with white dot-grid paper, yellow and electric-blue collages, bold typography and hard black shadows; includes switchable artwork previews and category filters. | [Read the README](untitled/README.md) | [Open Untitled](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/untitled/) | [index.html](untitled/index.html) |
 
 ## View a website
 
@@ -41,6 +42,7 @@ bigmiaow-studio-websites/
 ├── README.zh-CN.md         # Simplified Chinese overview
 ├── aperture/              # Offline collaborative AI workspace
 ├── banban/                # Collaboration stories and editable source
+├── untitled/              # Inspiration portfolio, prompt, source and screenshots
 └── fieldwork/             # Connected systems studio and editable source
     ├── README.md          # Project, assets, and verification notes
     ├── PROMPT.md          # Original design prompt
