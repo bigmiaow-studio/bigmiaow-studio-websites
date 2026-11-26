@@ -18,6 +18,7 @@ Each case lives in its own theme-named directory. Its README documents the proje
 | Case | Design and implementation | Project notes and prompt | Live demo | HTML source |
 | --- | --- | --- | --- | --- |
 | Aperture | A collaborative AI workspace website featuring torn-paper collages, classical sculptures, white editorial typography, and a sky-blue accent; fully usable offline. | [Read the README](aperture/README.md) | [Open Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/) | [index.html](aperture/index.html) |
+| Banban | A playful Chinese collaboration concept page with a yellow, white and navy testimonial wall, category filters and story dialogs. | [Read the README](banban/README.md) | [Open Banban](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/banban/) | [index.html](banban/index.html) |
 
 ## View a website
 

@@ -18,6 +18,7 @@
 | 案例 | 设计与实现 | 项目说明与提示词 | 在线预览 | 页面源码 |
 | --- | --- | --- | --- | --- |
 | Aperture | 协作式 AI 工作空间官网；手撕纸洞拼贴、古典雕塑、纯白社论排版与天蓝重点色；支持完全离线运行。 | [查看 README](aperture/README.md) | [打开 Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/) | [index.html](aperture/index.html) |
+| 伴伴 Banban | 中文团队协作概念落地页；黄色、白色与藏蓝评价墙，支持分类筛选、故事弹窗和移动菜单。 | [查看 README](banban/README.md) | [打开伴伴](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/banban/) | [index.html](banban/index.html) |
 
 ## 查看页面
 
