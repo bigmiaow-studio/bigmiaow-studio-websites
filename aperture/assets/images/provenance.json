@@ -1,0 +1,27 @@
+{
+  "generator": "OpenAI built-in image generation",
+  "created": "2026-11-26",
+  "original": true,
+  "assets": [
+    {
+      "file": "hero.webp",
+      "original": "originals/hero.png",
+      "prompt": "Use case: stylized-concept. Create an original very high resolution landscape editorial collage artboard for Aperture, an AI workspace website. Wide 3:1 composition. A bright, impossibly clear azure blue sky with fine fluffy sunlit white cumulus clouds seen through a huge irregular hand-torn horizontal opening in thick white cotton rag paper. Real visible feathery torn fibers and layered ripped paper edges, tactile craft and cast shadows. At center-right a monumental beautiful classical white marble bust of Apollo with curled hair, contemplative face turned to the left, sculpture cropped below chest but head fully visible within sky. At far left a smaller classical Ionic broken column rising through clouds. Surreal photographic fine-art collage, old-world sculpture meets serene sky, clean expensive art direction, natural sunlight, detailed marble and real paper texture. Blue sky fills most of the image, white paper top and bottom edging is delicate and irregular, torn border at lower edge. A tiny white marble sphere floating near left third. No text, letters, logos, symbols, graphic UI, frames or watermarks. This is a complete original full-bleed website artboard, not a website screenshot. Render 3072x1024 or highest available landscape resolution."
+    },
+    {
+      "file": "capabilities.webp",
+      "original": "originals/capabilities.png",
+      "prompt": "Use case: stylized-concept. Create an original high resolution square editorial surreal photographic paper collage for a refined AI workspace website. Vivid clear sky blue and soft white clouds inside a large irregular torn opening in layers of thick white fibrous cotton paper. A classical white marble female goddess bust, elegant curly hair and softly contemplative face, emerging from billowing clouds at center, looking toward left. Half of bust torso gently obscured by cloud. A small white marble ring floating in upper right. Sculpture head complete with room above. The lower-left one third should be mainly clear clouds/blue as space for a separately overlaid UI. Photoreal sculpture, highly detailed torn fibers and layered paper shadows, hand crafted tangible analogue surrealism, pristine white and azure, beautiful daylight. Overall composition blue sky center surrounded by irregular narrow white paper edges. No text, letters, logos, watermark, labels, UI or border frame. Square 2048x2048 or highest available."
+    },
+    {
+      "file": "judgment.webp",
+      "original": "originals/judgment.png",
+      "prompt": "Use case: stylized-concept. Create an original extremely detailed 1:1 square photographic artboard, a 90-degree overhead flat lay of a handcrafted surreal torn-paper collage. Multiple concentric irregular oval hand-ripped holes through 5 layers of thick pure white artist paper. Real long feathery torn fibers, tactile cross sections, shadows show physical depth. Deepest opening reveals a rich deep cobalt navy midnight sky with tiny stars, wisps of pale nebula and a small crescent moon upper left. Rising from the lower center of the hole a realistic antique white Carrara marble sculptural human right hand, fingers elegantly reaching upwards and slightly to the right, gesture inspired by classical sculpture and creation, subtle marble veins. Strong contrast of white sculpture against deep cobalt night. Actual overhead flat lay, no perspective room, no desk props. The night sky fills 65 percent of the image, rough torn white paper rings frame it, paper occupies narrow outer margins. Hand central, not cropped fingers, beautifully human realistic anatomy. Fine art editorial, minimal refined expensive tactile materiality. No words, no text, no UI, no watermark. Square 2048x2048 or highest resolution."
+    },
+    {
+      "file": "night.webp",
+      "original": "originals/night.png",
+      "prompt": "Use case: stylized-concept. Create an original panoramic very high resolution midnight celestial photographic collage artboard, 3:1 aspect ratio, for a refined editorial website closing banner. Deep inky navy cobalt night sky, an elegant faint Milky Way star river sweeping diagonally across right half, tiny white stars spread naturally. The central upper two thirds are a quiet deep navy open area for separately overlaid white title. Across the bottom edge, 3 layers of thick hand-torn white paper resembling soft clouds, irregular textured white cotton paper fibers, curled pale blue shadowed paper edges, cloudlike billows, a little real pale white cloud drifting on lower right. Small celestial white crescent moon far upper right. Tactile surreal photographic fine art collage, elegant restrained navy, cobalt, white palette only, no purple, no rainbow. Generous dark sky and only lower quarter white torn cloud layers. No text, letters, symbols, watermarks, logos, UI or frames. Render 3072x1024 or highest available landscape resolution."
+    }
+  ]
+}
