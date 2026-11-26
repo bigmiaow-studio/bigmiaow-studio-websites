@@ -1,0 +1,73 @@
+// Replace this content object to adapt the site to another technology or service theme.
+export const theme = {
+  name: '原场',
+  wordmark: 'FIELDWORK',
+  title: ['连接每一环', '释放新可能'],
+  intro: '我们连接策略、技术与数字体验，将复杂的业务需求，转化为清晰、可靠、持续生长的系统。',
+  announcement: '原场观察 Vol. 01',
+  announcementText: '从各自为战，到系统协同。探索连接的下一种可能。',
+  keywords: [
+    ['系统性思考', 'SYSTEMS THINKING'],
+    ['工程化实践', 'ENGINEERING PRACTICE'],
+    ['可持续生长', 'CONTINUOUS EVOLUTION'],
+  ],
+  routes: [
+    { name: '策略与洞察', en: 'STRATEGY', detail: '发现问题，定义正确的方向', x: 430, y: 65 },
+    { name: '系统架构', en: 'ARCHITECTURE', detail: '让每一层能力清晰连接', x: 515, y: 119 },
+    { name: '数字体验', en: 'EXPERIENCE', detail: '把复杂流程变成自然体验', x: 565, y: 187 },
+    { name: '产品工程', en: 'ENGINEERING', detail: '从概念到可运行的产品', x: 590, y: 267 },
+    { name: '数据智能', en: 'INTELLIGENCE', detail: '让数据成为行动的依据', x: 565, y: 347 },
+    { name: '连接集成', en: 'INTEGRATION', detail: '打通工具、设备与业务', x: 515, y: 415 },
+    { name: '持续演进', en: 'EVOLUTION', detail: '交付之后，价值持续生长', x: 430, y: 469 },
+  ],
+  capabilities: [
+    ['一张蓝图，形成共识', '业务梳理 / 数字策略 / 系统规划'],
+    ['一个系统，连接全局', '平台架构 / 数据集成 / 产品工程'],
+    ['一种体验，贯穿始终', '交互设计 / 界面系统 / 多端协同'],
+    ['每次迭代，都有依据', '可观测性 / 质量验证 / 持续优化'],
+  ],
+  scenarios: [
+    {
+      label: '空间运营', en: 'CONNECTED SPACES', title: ['让每个空间', '都有感知与回应'],
+      description: '把楼宇、设备与人的需求连接，在同一个界面，让空间运营从被动响应走向主动协同。',
+      steps: [['感知现场', '设备状态与空间数据，实时汇集。'], ['统一行动', '从发现问题到任务协同，路径清晰。'], ['持续优化', '用每一次反馈，让运营更进一步。']],
+      screen: '空间总览', entity: '原场 · 滨江园区', metric: '86', unit: '综合空间指数', sub: '设备在线率', value: '99.8%', chart: [35, 55, 42, 62, 51, 78, 69, 84, 72, 94, 87, 98],
+      tasks: ['A 区 · 环境巡检', '共享会议室调度', '北区 · 照明优化'], notification: '会议室温度已自动调节',
+    },
+    {
+      label: '现场协同', en: 'FIELD COLLABORATION', title: ['让一线信息', '成为共同的行动'],
+      description: '让工单、现场与团队保持同步。从任务派发到结果反馈，每一步都连接到真正需要它的人。',
+      steps: [['发现需求', '现场问题通过移动端即时记录。'], ['协同执行', '任务、人员和进度始终在同一处。'], ['闭环复盘', '每一次完成，都留下可追溯的依据。']],
+      screen: '现场工作台', entity: '原场 · 工程服务', metric: '24', unit: '今日协同任务', sub: '任务完成率', value: '96.2%', chart: [27, 35, 48, 35, 62, 57, 74, 62, 86, 79, 92, 96],
+      tasks: ['设备联调 · 待确认', '传感节点部署', '现场交付核验'], notification: '新一轮现场任务已同步',
+    },
+    {
+      label: '资产管理', en: 'ASSET INTELLIGENCE', title: ['让每项资产', '拥有清晰的脉络'],
+      description: '连接资产的完整生命周期。状态、维护与使用记录集中呈现，让管理决策拥有完整的上下文。',
+      steps: [['建立档案', '让分散的资产形成统一的数据底座。'], ['洞察状态', '关联使用情况与维护记录。'], ['规划未来', '从实时信息中，找到优化的空间。']],
+      screen: '资产总览', entity: '原场 · 资产中心', metric: '128', unit: '已连接资产', sub: '资产健康度', value: '98.5%', chart: [62, 58, 70, 65, 78, 81, 76, 85, 82, 91, 88, 98],
+      tasks: ['环境传感器 · 正常', '边缘网关 · 运行中', '配电设备 · 已巡检'], notification: '所有关键资产状态良好',
+    },
+    {
+      label: '服务触点', en: 'SERVICE EXPERIENCE', title: ['让每次服务', '都与需求更近一步'],
+      description: '把线上入口和线下服务连成一个体验。需求被理解，进度可追踪，服务的每一环都有回应。',
+      steps: [['便捷发起', '一个入口，连接不同的服务需求。'], ['透明跟进', '服务进程与关键节点，随时可见。'], ['及时回应', '把用户的反馈带入下一次体验。']],
+      screen: '服务中心', entity: '原场 · 用户服务', metric: '12', unit: '进行中的服务', sub: '服务响应率', value: '100%', chart: [44, 58, 52, 70, 62, 82, 73, 91, 86, 95, 92, 100],
+      tasks: ['空间预约 · 已确认', '设备支持 · 处理中', '访客通行 · 已开通'], notification: '你的服务请求已有新进展',
+    },
+  ],
+  phases: [
+    { label: '发现与定义', title: '先理解问题，再定义答案。', text: '通过访谈、业务地图与现场观察，找到值得解决的问题，让目标、边界与优先级形成共识。', board: '项目全景', status: 'DISCOVERY', tasks: ['业务目标与成功标准', '关键角色与需求访谈', '服务触点与现状梳理', '机会地图与行动路线'], progress: [100, 86, 68, 42] },
+    { label: '设计与验证', title: '让想法被看见，让方向被验证。', text: '从系统蓝图到可操作的原型，提前验证关键假设，让每一个设计决定都回到真实的使用场景。', board: '设计验证', status: 'DESIGN', tasks: ['系统蓝图与信息架构', '核心交互原型', '视觉与组件规范', '关键场景可用性验证'], progress: [100, 92, 76, 58] },
+    { label: '构建与交付', title: '用工程的精度，把蓝图变成现实。', text: '小步构建、持续集成、并行验证。从产品代码到部署手册，让交付是一套完整、可接续的成果。', board: '工程交付', status: 'DELIVERY', tasks: ['产品功能与服务开发', '系统接口与数据联调', '质量测试与验收', '交付文档与团队培训'], progress: [100, 90, 82, 64] },
+    { label: '运营与生长', title: '上线是起点，让系统持续向前。', text: '观察实际表现，收集使用反馈，以可追踪的迭代持续优化，让系统随着业务一起成长。', board: '持续演进', status: 'EVOLUTION', tasks: ['运行监测与问题响应', '体验数据与行为观察', '迭代机会与需求评估', '版本规划与持续发布'], progress: [100, 94, 88, 72] },
+  ],
+  directory: [
+    { title: '策略与系统设计', en: 'STRATEGY & SYSTEMS', description: '把复杂问题，梳理成清晰的方向。', href: '#capabilities' },
+    { title: '产品与数字体验', en: 'PRODUCT & EXPERIENCE', description: '从真实场景出发，创造自然的体验。', href: '#scenarios' },
+    { title: '技术与工程实践', en: 'TECHNOLOGY & ENGINEERING', description: '以可靠的工程，让想法真正运行。', href: '#process' },
+    { title: '质量与验证体系', en: 'QUALITY & VALIDATION', description: '让每一次交付，都经得起验证。', href: '#validation' },
+    { title: '数据与连接能力', en: 'DATA & CONNECTION', description: '连接分散的节点，释放整体的价值。', href: '#network' },
+    { title: '认识原场', en: 'ABOUT FIELDWORK', description: '一群相信连接，也认真做事的人。', href: '#about' },
+  ],
+};

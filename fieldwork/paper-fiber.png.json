@@ -1,0 +1,6 @@
+{
+  "source": "original-procedural-artwork",
+  "description": "Deterministic paper fibers authored for FIELDWORK with maximum alpha 10/255 (approximately four percent).",
+  "generator": "scripts/prepare-assets.py",
+  "third_party_images": false
+}

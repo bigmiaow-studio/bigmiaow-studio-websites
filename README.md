@@ -19,6 +19,7 @@ Each case lives in its own theme-named directory. Its README documents the proje
 | --- | --- | --- | --- | --- |
 | Aperture | A collaborative AI workspace website featuring torn-paper collages, classical sculptures, white editorial typography, and a sky-blue accent; fully usable offline. | [Read the README](aperture/README.md) | [Open Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/) | [index.html](aperture/index.html) |
 | Banban | A playful Chinese collaboration concept page with a yellow, white and navy testimonial wall, category filters and story dialogs. | [Read the README](banban/README.md) | [Open Banban](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/banban/) | [index.html](banban/index.html) |
+| Fieldwork | A Chinese technology and services studio website with cool-gray fiber paper, ink-black engineering typography, lime signals, animated fan-out connections, and original interface demonstrations. | [Read the README](fieldwork/README.md) | [Open Fieldwork](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/fieldwork/) | [index.html](fieldwork/index.html) |
 
 ## View a website
 
@@ -38,12 +39,16 @@ Cases may use different stacks. Follow each case's README for dependencies, buil
 bigmiaow-studio-websites/
 ├── README.md               # English overview (default)
 ├── README.zh-CN.md         # Simplified Chinese overview
-└── aperture/
-    ├── README.md           # Project, prompt, assets, and verification notes
-    ├── index.html
-    ├── styles.css
-    ├── app.js
-    └── assets/             # Fonts, images, and source or license records
+├── aperture/              # Offline collaborative AI workspace
+├── banban/                # Collaboration stories and editable source
+└── fieldwork/             # Connected systems studio and editable source
+    ├── README.md          # Project, assets, and verification notes
+    ├── PROMPT.md          # Original design prompt
+    ├── index.html         # Published static page
+    ├── assets/            # Generated JavaScript and CSS
+    ├── fonts/             # Local fonts and licenses
+    ├── shots/             # Browser captures
+    └── source/            # Development source, tests, and build tools
 ```
 
 ## Adding a case

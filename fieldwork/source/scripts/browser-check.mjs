@@ -1,0 +1,108 @@
+import { chromium } from '@playwright/test';
+import assert from 'node:assert/strict';
+import { mkdir } from 'node:fs/promises';
+
+const url = process.env.PREVIEW_URL || 'http://localhost:5174/';
+const browser = await chromium.launch({ headless: true });
+await mkdir('test-results', { recursive: true });
+const results = [];
+try {
+  const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
+  const errors = [];
+  page.on('pageerror', e => errors.push(e.message));
+  page.on('response', r => { if (r.status() >= 400) errors.push(`${r.status()} ${r.url()}`); });
+  await page.goto(url, { waitUntil: 'networkidle' });
+  await page.addStyleTag({ content: 'html{scroll-behavior:auto!important}' });
+  await page.evaluate(() => document.fonts.ready);
+  assert.equal(await page.locator('h1').count(), 1);
+  assert.equal(await page.locator('.route').count(), 7);
+  await page.locator('.route-node').first().hover();
+  await page.waitForTimeout(220);
+  assert.equal(await page.locator('.route-tooltip').first().evaluate(el => getComputedStyle(el).opacity), '1');
+  await page.mouse.move(1, 1);
+  await page.locator('.reveal-screen').scrollIntoViewIfNeeded();
+  await page.waitForTimeout(800);
+  assert.ok(await page.locator('.reveal-screen').evaluate(el => el.classList.contains('is-revealed')));
+  await page.locator('#capabilities').screenshot({ path: 'test-results/desktop-capabilities.png' });
+  await page.locator('#scenario-stage').scrollIntoViewIfNeeded();
+  await page.locator('[data-scenario="0"]').click();
+  await page.locator('[data-scenario="0"]').evaluate(el => el.blur());
+  await page.mouse.move(1, 1);
+  await page.waitForTimeout(5200);
+  assert.equal(await page.locator('[data-scenario="1"]').getAttribute('aria-selected'), 'true', '五秒后自动切换场景');
+  await page.locator('#scenario-stage').hover();
+  const pausedIndex = await page.locator('.scenario-tab.active').getAttribute('data-scenario');
+  await page.waitForTimeout(5200);
+  assert.equal(await page.locator('.scenario-tab.active').getAttribute('data-scenario'), pausedIndex, '悬停时保留场景');
+  await page.locator('[data-scenario="2"]').click();
+  assert.match(await page.locator('#scenario-title').innerText(), /每项资产/);
+  assert.match(await page.locator('.phone-center h4').innerText(), /资产总览/);
+  await page.waitForTimeout(400);
+  await page.locator('#scenarios').screenshot({ path: 'test-results/desktop-scenarios.png' });
+  await page.locator('[data-phase="2"]').click();
+  await page.waitForTimeout(350);
+  assert.match(await page.locator('#process-detail').innerText(), /工程的精度/);
+  assert.match(await page.locator('.wb-heading').innerText(), /工程交付/);
+  assert.equal(await page.locator('#process-panel .workbench').count(), 1);
+  await page.locator('[data-phase="2"]').press('ArrowRight');
+  await page.waitForTimeout(350);
+  assert.equal(await page.locator('[data-phase="3"]').getAttribute('aria-selected'), 'true');
+  await page.locator('[data-phase="3"]').evaluate(el => el.blur());
+  await page.locator('#process').screenshot({ path: 'test-results/desktop-process.png' });
+  await page.locator('#validation').screenshot({ path: 'test-results/desktop-validation.png' });
+  await page.locator('#network').scrollIntoViewIfNeeded();
+  await page.waitForTimeout(2400);
+  assert.ok(Number(await page.locator('.active-dot').first().evaluate(el => getComputedStyle(el).opacity)) > 0, '酸橙节点确实被点亮');
+  await page.locator('#network').screenshot({ path: 'test-results/desktop-network.png' });
+  await page.locator('#start-project').click();
+  await page.locator('input[name="name"]').fill('测试团队');
+  await page.locator('textarea[name="goal"]').fill('希望把分散的设备和运营信息连接起来，让现场团队协作更顺畅。');
+  await page.locator('#brief-form button[type="submit"]').click();
+  assert.match(await page.locator('#brief-output').innerText(), /测试团队/);
+  assert.match(await page.locator('#brief-output').innerText(), /尚未发送给任何人/);
+  const downloadPromise = page.waitForEvent('download');
+  await page.locator('#download-brief').click();
+  const download = await downloadPromise;
+  assert.equal(download.suggestedFilename(), '原场-FIELDWORK-项目简报.txt');
+  await page.locator('#start-project').click();
+  await page.evaluate(() => window.scrollTo(0,0));
+  await page.screenshot({ path: 'test-results/desktop-full.png', fullPage: true });
+  assert.deepEqual(errors, [], '页面和资源无错误');
+  results.push('桌面：线路交互、屏幕入场、自动轮换、悬停暂停、场景联动、阶段切换、键盘操作、简报生成与下载通过。');
+
+  for (const width of [360, 390, 768, 1024, 1920]) {
+    await page.setViewportSize({ width, height: width < 768 ? 844 : 1000 });
+    await page.goto(url, { waitUntil: 'networkidle' });
+    await page.addStyleTag({ content: 'html{scroll-behavior:auto!important}' });
+    await page.evaluate(() => document.fonts.ready);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+    assert.equal(overflow, false, `${width}px 下没有横向溢出`);
+    const completeBoard = await page.evaluate(() => document.querySelector('.wb-bottom').getBoundingClientRect().bottom <= document.querySelector('.workbench').getBoundingClientRect().bottom);
+    assert.ok(completeBoard, `${width}px 下完整展示工作台`);
+    const phoneOverlap = await page.evaluate(() => document.querySelector('.phone-center .phone-task').getBoundingClientRect().bottom > document.querySelector('.phone-center .phone-bottom-nav').getBoundingClientRect().top);
+    assert.equal(phoneOverlap, false, `${width}px 设备界面内容没有被底部导航遮挡`);
+    if (width === 390) {
+      await page.waitForTimeout(1700);
+      await page.screenshot({ path: 'test-results/mobile-hero.png' });
+      await page.locator('.menu-toggle').click();
+      assert.equal(await page.locator('#mobile-nav').isVisible(), true);
+      await page.locator('#mobile-nav a[href="#scenarios"]').click();
+      assert.equal(await page.locator('#mobile-nav').isVisible(), false);
+      assert.equal(await page.locator('.phone-left').isVisible(), false);
+      assert.equal(await page.locator('.phone-center').isVisible(), true);
+      await page.locator('#scenarios').screenshot({ path: 'test-results/mobile-scenarios.png' });
+      await page.locator('#process').screenshot({ path: 'test-results/mobile-process.png' });
+      await page.evaluate(() => window.scrollTo(0,0));
+      await page.screenshot({ path: 'test-results/mobile-full.png', fullPage: true });
+    }
+  }
+  results.push('360、390、768、1024、1920px：无横向溢出；移动导航与单设备展示通过。');
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto(url, { waitUntil: 'networkidle' });
+  assert.equal(await page.locator('.route-draw').first().evaluate(el => getComputedStyle(el).strokeDashoffset), '0px');
+  assert.equal(await page.locator('.reveal-screen').evaluate(el => getComputedStyle(el).opacity), '1');
+  results.push('减少动态效果设置：线路保持可见、屏幕直接显示。');
+  console.log(results.join('\n'));
+} finally {
+  await browser.close();
+}
