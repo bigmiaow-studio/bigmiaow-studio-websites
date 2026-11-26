@@ -15,11 +15,13 @@
 
 ## 案例目录
 
-| 案例 | 设计与实现 | 项目说明与提示词 | 页面源码 |
-| --- | --- | --- | --- |
-| Aperture | 协作式 AI 工作空间官网；手撕纸洞拼贴、古典雕塑、纯白社论排版与天蓝重点色；支持完全离线运行。 | [查看 README](aperture/README.md) | [index.html](aperture/index.html) |
+| 案例 | 设计与实现 | 项目说明与提示词 | 在线预览 | 页面源码 |
+| --- | --- | --- | --- | --- |
+| Aperture | 协作式 AI 工作空间官网；手撕纸洞拼贴、古典雕塑、纯白社论排版与天蓝重点色；支持完全离线运行。 | [查看 README](aperture/README.md) | [打开 Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/) | [index.html](aperture/index.html) |
 
 ## 查看页面
+
+点击案例目录中的 **在线预览** 即可打开已发布的网页。如需本地运行：
 
 1. 下载或克隆本仓库。
 2. 进入感兴趣的案例目录，阅读其中的 README。
@@ -27,7 +29,7 @@
 
 各案例可以使用不同的技术栈，是否需要安装依赖、构建或联网，以各自的 README 为准。当前 Aperture 案例无需安装依赖或启动服务器。
 
-**在线预览状态：**本仓库尚未启用 GitHub Pages。上表中的 HTML 链接在 GitHub 中展示源码，不是已发布的网页预览。
+**在线预览：**GitHub Pages 从 `master` 分支的根目录发布网站，各案例通过主题目录访问，例如 `/aperture/`。**页面源码** 链接用于在 GitHub 查看实现文件。
 
 ## 目录结构
 

@@ -15,11 +15,13 @@ Each case lives in its own theme-named directory. Its README documents the proje
 
 ## Case library
 
-| Case | Design and implementation | Project notes and prompt | HTML source |
-| --- | --- | --- | --- |
-| Aperture | A collaborative AI workspace website featuring torn-paper collages, classical sculptures, white editorial typography, and a sky-blue accent; fully usable offline. | [Read the README](aperture/README.md) | [index.html](aperture/index.html) |
+| Case | Design and implementation | Project notes and prompt | Live demo | HTML source |
+| --- | --- | --- | --- | --- |
+| Aperture | A collaborative AI workspace website featuring torn-paper collages, classical sculptures, white editorial typography, and a sky-blue accent; fully usable offline. | [Read the README](aperture/README.md) | [Open Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/) | [index.html](aperture/index.html) |
 
 ## View a website
+
+Click **Live demo** in the case library to open the published website. To run a case locally:
 
 1. Download or clone this repository.
 2. Open the case directory and read its README.
@@ -27,7 +29,7 @@ Each case lives in its own theme-named directory. Its README documents the proje
 
 Cases may use different stacks. Follow each case's README for dependencies, build steps, and network requirements. The current Aperture case needs no dependency installation or local server.
 
-**Online preview status:** GitHub Pages is not currently enabled for this repository. The HTML links above show source code on GitHub; they are not published website previews.
+**Online previews:** GitHub Pages publishes this repository from the root of `master`. Each case is available under its theme directory, such as `/aperture/`. The **HTML source** links open the implementation files on GitHub.
 
 ## Repository structure
 

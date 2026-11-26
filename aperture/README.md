@@ -1,5 +1,7 @@
 # Aperture
 
+**在线预览：**[打开 Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/)
+
 为协作式 AI 工作空间 **Aperture** 制作的单页概念官网。视觉围绕「超现实手撕纸洞拼贴 × 纯白社论排版 × 天蓝单重点色」展开，使用原创无字拼贴画板、古典大理石雕塑和明暗天空，展示团队与 AI 协作的可能性。
 
 网站采用原生 HTML、CSS 和 JavaScript，**100% 离线运行**，无构建步骤、运行时依赖或外链 CDN。
