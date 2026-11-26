@@ -15,12 +15,12 @@ Each case lives in its own theme-named directory. Its README documents the proje
 
 ## Case library
 
-| Case | Design and implementation | Project notes and prompt | Live demo | HTML source |
-| --- | --- | --- | --- | --- |
-| Aperture | A collaborative AI workspace website featuring torn-paper collages, classical sculptures, white editorial typography, and a sky-blue accent; fully usable offline. | [Read the README](aperture/README.md) | [Open Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/) | [index.html](aperture/index.html) |
-| Banban | A playful Chinese collaboration concept page with a yellow, white and navy testimonial wall, category filters and story dialogs. | [Read the README](banban/README.md) | [Open Banban](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/banban/) | [index.html](banban/index.html) |
-| Fieldwork | A Chinese technology and services studio website with cool-gray fiber paper, ink-black engineering typography, lime signals, animated fan-out connections, and original interface demonstrations. | [Read the README](fieldwork/README.md) | [Open Fieldwork](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/fieldwork/) | [index.html](fieldwork/index.html) |
-| Untitled 未定 | A neutral inspiration and portfolio page with white dot-grid paper, yellow and electric-blue collages, bold typography and hard black shadows; includes switchable artwork previews and category filters. | [Read the README](untitled/README.md) | [Open Untitled](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/untitled/) | [index.html](untitled/index.html) |
+| Case | Design and implementation | Project notes and prompt | Live demo |
+| --- | --- | --- | --- |
+| Aperture | A collaborative AI workspace website featuring torn-paper collages, classical sculptures, white editorial typography, and a sky-blue accent; fully usable offline. | [Read the README](aperture/README.md) | [Open Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/) |
+| Banban | A playful Chinese collaboration concept page with a yellow, white and navy testimonial wall, category filters and story dialogs. | [Read the README](banban/README.md) | [Open Banban](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/banban/) |
+| Fieldwork | A Chinese technology and services studio website with cool-gray fiber paper, ink-black engineering typography, lime signals, animated fan-out connections, and original interface demonstrations. | [Read the README](fieldwork/README.md) | [Open Fieldwork](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/fieldwork/) |
+| Untitled 未定 | A neutral inspiration and portfolio page with white dot-grid paper, yellow and electric-blue collages, bold typography and hard black shadows; includes switchable artwork previews and category filters. | [Read the README](untitled/README.md) | [Open Untitled](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/untitled/) |
 
 ## View a website
 
@@ -32,7 +32,7 @@ Click **Live demo** in the case library to open the published website. To run a 
 
 Cases may use different stacks. Follow each case's README for dependencies, build steps, and network requirements. The current Aperture case needs no dependency installation or local server.
 
-**Online previews:** GitHub Pages publishes this repository from the root of `master`. Each case is available under its theme directory, such as `/aperture/`. The **HTML source** links open the implementation files on GitHub.
+**Online previews:** GitHub Pages publishes this repository from the root of `master`. Each case is available under its theme directory, such as `/aperture/`.
 
 ## Repository structure
 

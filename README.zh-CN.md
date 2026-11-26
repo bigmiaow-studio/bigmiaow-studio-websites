@@ -15,12 +15,12 @@
 
 ## 案例目录
 
-| 案例 | 设计与实现 | 项目说明与提示词 | 在线预览 | 页面源码 |
-| --- | --- | --- | --- | --- |
-| Aperture | 协作式 AI 工作空间官网；手撕纸洞拼贴、古典雕塑、纯白社论排版与天蓝重点色；支持完全离线运行。 | [查看 README](aperture/README.md) | [打开 Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/) | [index.html](aperture/index.html) |
-| 伴伴 Banban | 中文团队协作概念落地页；黄色、白色与藏蓝评价墙，支持分类筛选、故事弹窗和移动菜单。 | [查看 README](banban/README.md) | [打开伴伴](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/banban/) | [index.html](banban/index.html) |
-| 原场 Fieldwork | 技术与服务工作室首页；冷灰纤维纸面、墨黑工程排版与酸橙功能标记，包含扇形线路、场景轮换、原创控制台和点阵网络。 | [查看 README](fieldwork/README.md) | [打开原场](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/fieldwork/) | [index.html](fieldwork/index.html) |
-| 未定 UNTITLED | 中性灵感与作品展示页；浅白点阵纸面、明黄与电光蓝拼贴、超粗标题和黑边硬阴影，支持作品预览切换与类别筛选。 | [查看 README](untitled/README.md) | [打开未定](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/untitled/) | [index.html](untitled/index.html) |
+| 案例 | 设计与实现 | 项目说明与提示词 | 在线预览 |
+| --- | --- | --- | --- |
+| Aperture | 协作式 AI 工作空间官网；手撕纸洞拼贴、古典雕塑、纯白社论排版与天蓝重点色；支持完全离线运行。 | [查看 README](aperture/README.md) | [打开 Aperture](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/aperture/) |
+| 伴伴 Banban | 中文团队协作概念落地页；黄色、白色与藏蓝评价墙，支持分类筛选、故事弹窗和移动菜单。 | [查看 README](banban/README.md) | [打开伴伴](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/banban/) |
+| 原场 Fieldwork | 技术与服务工作室首页；冷灰纤维纸面、墨黑工程排版与酸橙功能标记，包含扇形线路、场景轮换、原创控制台和点阵网络。 | [查看 README](fieldwork/README.md) | [打开原场](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/fieldwork/) |
+| 未定 UNTITLED | 中性灵感与作品展示页；浅白点阵纸面、明黄与电光蓝拼贴、超粗标题和黑边硬阴影，支持作品预览切换与类别筛选。 | [查看 README](untitled/README.md) | [打开未定](https://bigmiaow-studio.github.io/bigmiaow-studio-websites/untitled/) |
 
 ## 查看页面
 
@@ -32,7 +32,7 @@
 
 各案例可以使用不同的技术栈，是否需要安装依赖、构建或联网，以各自的 README 为准。当前 Aperture 案例无需安装依赖或启动服务器。
 
-**在线预览：**GitHub Pages 从 `master` 分支的根目录发布网站，各案例通过主题目录访问，例如 `/aperture/`。**页面源码** 链接用于在 GitHub 查看实现文件。
+**在线预览：**GitHub Pages 从 `master` 分支的根目录发布网站，各案例通过主题目录访问，例如 `/aperture/`。
 
 ## 目录结构
 
